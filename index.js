@@ -5,7 +5,7 @@ function currentLine(line){
     return "The line is currently empty.";
   }
   var peopleInLine = [];
-  
+
   for (var i = 0; i < line.length; i++) {
     peopleInLine.push(`${i + 1}. ${line[i]}`)
   }
@@ -22,6 +22,6 @@ function nowServing(line) {
 
 function takeANumber(line, name){
   line.push(name);
-  
+
   return `Welcome, ${name}. You are number ${line.length} in line.`
 };
