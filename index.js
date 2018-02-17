@@ -21,7 +21,7 @@ function takeANumber(deliLine, name) {
 
   return `Welcome, ${name}. You are number ${peopleInLine.length} in line.`
   }
-}
+
 
 
 
