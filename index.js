@@ -1,32 +1,27 @@
-// function to show people their place in line. If no one in line, "The line is currently empty."
-let deliLine = [];
+var katzDeli = [];
 
-function currentLine(line) {
-  const peopleInLine = []
-  if (line.length === 0) {
-    return "The line is currently empty."
-  } else {
-    for(let i = 0; i < line.length; i++) {
-      peopleInLine.push(`${i + 1}. ${line[i]}`)
-    }
-
-    return `The line is currently: ${peopleInLine.join(', ')}`
+function currentLine(line){
+  if(line.length === 0) {
+    return "The line is currently empty.";
   }
-
-
-
-// function for people entering deli. arguments = array for current line, new customer name. Return person's name and position in line.
-function takeANumber(line, name) {
-  line.push(name);
-
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  var peopleInLine = [];
+  
+  for (var i = 0; i < line.length; i++) {
+    peopleInLine.push(`${i + 1}. ${line[i]}`)
+  }
+  return `The line is currently: ${peopleInLine}.join(', ')`
 };
 
-// function to call next person and take them from front of line. If no one in line, return "There is nobody waiting to be served!"
 function nowServing(line) {
   if(line.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    return  `Currently serving ${line.shift()}.`;
-  }
+    return `Currently serving ${line.shift()}.`
+  };
+
+
+function takeANumber(line, name){
+  line.push(name);
+  
+  return `Welcome, ${name}. You are number ${line.length} in line.`
 };
