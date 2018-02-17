@@ -16,10 +16,10 @@ function currentLine(line) {
 
 
 // function for people entering deli. arguments = array for current line, new customer name. Return person's name and position in line.
-function takeANumber(deliLine, name) {
-  line.push(name)
+function takeANumber(peopleInLine, name) {
+  peopleinLine.push(name)
 
-  return `Welcome, ${name}. You are number ${line.length} in line.`
+  return `Welcome, ${name}. You are number ${peopleInLine.length} in line.`
 }
 
 
