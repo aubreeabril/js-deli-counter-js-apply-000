@@ -15,8 +15,7 @@ function currentLine(line) {
 }
 
 
-// function for people entering deli. arguments = array for current line, new customer name. Return person's name and position in line. 
+// function for people entering deli. arguments = array for current line, new customer name. Return person's name and position in line.
 
 
 // function to call next person and take them from front of line. If no one in line, return "There is nobody waiting to be served!"
-
